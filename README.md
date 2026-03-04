@@ -1,17 +1,17 @@
-# Relion
+# Rellion
 
 > A next-generation Object-Relational Mapping engine for Java.
 
-Relion is an ambitious, performance-oriented ORM framework built entirely in pure Java.
+Rellion is an ambitious, performance-oriented ORM framework built entirely in pure Java.
 It aims to redefine how applications interact with relational databases by combining clarity, architectural rigor, and predictable data access patterns into a cohesive data engine.
 
-Relion is framework-agnostic by design. It does not depend on Spring or any external container. It is built as a standalone infrastructure library that can integrate into any Java-based system.
+Rellion is framework-agnostic by design. It does not depend on Spring or any external container. It is built as a standalone infrastructure library that can integrate into any Java-based system.
 
 ---
 
 ## ✨ Vision
 
-Relion is designed as more than just a persistence layer.
+Rellion is designed as more than just a persistence layer.
 It is a data mapping engine built to:
 
 * Provide expressive and intuitive entity modeling
@@ -20,13 +20,13 @@ It is a data mapping engine built to:
 * Minimize configuration
 * Encourage clarity over hidden magic
 
-Relion focuses on making performance and correctness first-class concerns, not afterthoughts.
+Rellion focuses on making performance and correctness first-class concerns, not afterthoughts.
 
 ---
 
 ## 🧠 Philosophy
 
-Relion follows a few core principles:
+Rellion follows a few core principles:
 
 ### 1. Performance by Design
 
@@ -42,7 +42,7 @@ No hidden framework lifecycle. No container dependency. Just clean Java and expl
 
 ### 4. Framework-Agnostic
 
-Relion works in:
+Rellion works in:
 
 * Plain Java applications
 * Spring-based systems
@@ -54,7 +54,7 @@ Relion works in:
 
 ## 🏗 Architecture Overview
 
-Relion is structured into modular components:
+Rellion is structured into modular components:
 
 * **Entity Mapping Layer**
   Maps annotated Java classes to relational tables.
@@ -76,18 +76,18 @@ Relion is structured into modular components:
 ## 🚀 Example Usage (Conceptual)
 
 ```java
-Relion relion = Relion.builder()
+Rellion Rellion = Rellion.builder()
     .dataSource(dataSource)
     .build();
 
-User user = relion.find(User.class, 1L);
+User user = Rellion.find(User.class, 1L);
 
-List<User> users = relion.query(User.class)
+List<User> users = Rellion.query(User.class)
     .where("age > ?", 18)
     .fetch();
 ```
 
-Relion focuses on providing a clean and expressive API while maintaining control over how data is fetched and mapped.
+Rellion focuses on providing a clean and expressive API while maintaining control over how data is fetched and mapped.
 
 ---
 
@@ -99,7 +99,7 @@ Relion focuses on providing a clean and expressive API while maintaining control
 * JUnit (testing)
 * H2 / PostgreSQL (development & integration testing)
 
-Relion does not depend on Spring or any other framework.
+Rellion does not depend on Spring or any other framework.
 
 ---
 
@@ -138,7 +138,7 @@ Relion does not depend on Spring or any other framework.
 
 ## 🎯 Goals
 
-Relion is built as a serious engineering project to explore:
+Rellion is built as a serious engineering project to explore:
 
 * Database internals
 * Query optimization
@@ -148,5 +148,5 @@ Relion is built as a serious engineering project to explore:
 
 ---
 
-Relion is not just about mapping objects to tables.
+Rellion is not just about mapping objects to tables.
 It is about building a reliable, transparent, and scalable foundation for modern Java applications.
